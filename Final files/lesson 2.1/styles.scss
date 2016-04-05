@@ -1,0 +1,41 @@
+// Import Motion UI
+@import '../bower_components/motion-ui/src/motion-ui';
+
+// Include mixins for exporting the default framework CSS
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Import variables
+@import '../demo/vars';
+
+// The transition defaults:
+// Speed: 500ms
+// Timing: linear
+// Delay: 0
+
+// Speed modifier classes
+// .slow - 750ms
+// .fast - 250ms
+
+// Timing modifier classes
+// .linear
+// .ease
+// .ease-in
+// .ease-out
+// .ease-in-out
+// .bounce-in
+// .bounce-out
+// .bounce-in-out
+
+// Delay modifier classes
+// .short-delay - 300ms
+// .long-delay - 700ms
+
+// Custom transitions
+.custom-fade-in {
+    @include mui-fade( in, 0, 1, $duration: 1s, $timing: ease-in-out, $delay: 2s );
+}
+
+.custom-fade-out {
+    @include mui-fade( out, 1, 0, $duration: 2s, $timing: ease-in-out, $delay: 5s );
+}

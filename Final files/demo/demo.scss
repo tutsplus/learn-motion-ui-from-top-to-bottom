@@ -1,0 +1,133 @@
+// Import variables
+@import 'vars';
+
+// General styles
+* {
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0 0 1.5em 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+hr {
+    border: none;
+    background-color: $color-1;
+    height: 1px;
+    margin: 3em 0;
+}
+
+// Demo styles
+.demo-btn {
+    display: inline-block;
+    padding: 1em;
+    background-color: $color-3;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: lighten( $color-3, 5% );
+    }
+
+    &:active {
+        background-color: lighten( $color-3, 10% );
+    }
+
+    &.disabled {
+        background-color: lighten( $color-3, 20% );
+        cursor: default;
+        color: lighten( $color-3, 40% );
+    }
+}
+
+.demo-sidebar {
+    width: 35%;
+    background-color: lighten( $color-1, 5% );
+    padding: 3em 1.5em;
+}
+
+.demo-options {
+    .options {
+        padding: 0;
+        margin-bottom: 3em;
+
+        li {
+            list-style: none;
+            display: block;
+            margin-bottom: 1em;
+
+            .demo-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.demo-content {
+    width: 65%;
+    position: fixed;
+    padding: 3em;
+    top: 0;
+    right: 0;
+    height: 100vh;
+
+    #the-object,
+    #the-second-object,
+    #the-third-object {
+        text-align: center;
+        color: #fff;
+        width: 16em;
+        height: 16em;
+        line-height: 16em;
+        position: absolute;
+        left: 50%;
+        margin-left: -8em;
+        margin-top: -8em;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    #the-object {
+        background-color: $color-4;
+        top: 50%;
+    }
+
+    #the-second-object {
+        background-color: $color-2;
+        top: 25%;
+    }
+
+    #the-third-object {
+        background-color: $color-5;
+        top: 75%;
+    }
+}
+
+.demo-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10em;
+}
+
+.demo-box {
+    background-color: $color-5;
+    color: lighten( $color-5, 30% );
+    padding: 5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+
+    p {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,15 @@
+// Import Motion UI
+@import '../bower_components/motion-ui/src/motion-ui';
+
+// Include mixins for exporting the default framework CSS
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Import variables
+@import '../demo/vars';
+
+// Custom animation
+.custom-combination {
+    @include mui-animation( slide, fade, spin, zoom );
+    animation-duration: 2s;
+}

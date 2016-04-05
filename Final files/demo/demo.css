@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box; }
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1.5em 0; }
+
+html,
+body {
+  height: 100%; }
+
+hr {
+  border: none;
+  background-color: #eaeaea;
+  height: 1px;
+  margin: 3em 0; }
+
+.demo-btn {
+  display: inline-block;
+  padding: 1em;
+  background-color: #474747;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .demo-btn:hover {
+    background-color: #545454; }
+  .demo-btn:active {
+    background-color: #616161; }
+  .demo-btn.disabled {
+    background-color: #7a7a7a;
+    cursor: default;
+    color: #adadad; }
+
+.demo-sidebar {
+  width: 35%;
+  background-color: #f7f7f7;
+  padding: 3em 1.5em; }
+
+.demo-options .options {
+  padding: 0;
+  margin-bottom: 3em; }
+  .demo-options .options li {
+    list-style: none;
+    display: block;
+    margin-bottom: 1em; }
+    .demo-options .options li .demo-btn {
+      width: 100%;
+      text-align: center; }
+
+.demo-content {
+  width: 65%;
+  position: fixed;
+  padding: 3em;
+  top: 0;
+  right: 0;
+  height: 100vh; }
+  .demo-content #the-object,
+  .demo-content #the-second-object,
+  .demo-content #the-third-object {
+    text-align: center;
+    color: #fff;
+    width: 16em;
+    height: 16em;
+    line-height: 16em;
+    position: absolute;
+    left: 50%;
+    margin-left: -8em;
+    margin-top: -8em; }
+    .demo-content #the-object.hidden,
+    .demo-content #the-second-object.hidden,
+    .demo-content #the-third-object.hidden {
+      display: none; }
+  .demo-content #the-object {
+    background-color: #DD1144;
+    top: 50%; }
+  .demo-content #the-second-object {
+    background-color: #18BEFC;
+    top: 25%; }
+  .demo-content #the-third-object {
+    background-color: #4455A5;
+    top: 75%; }
+
+.demo-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10em; }
+
+.demo-box {
+  background-color: #4455A5;
+  color: #a7b0db;
+  padding: 5em;
+  text-align: center;
+  margin-bottom: 1.5em; }
+  .demo-box p {
+    margin-bottom: 0; }

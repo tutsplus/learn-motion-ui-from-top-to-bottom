@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learn Motion UI from Top to Bottom - Animations</title>
+        <link rel="stylesheet" href="../lesson 2.2/styles.css" media="screen">
+        <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" media="screen">
+        <link rel="stylesheet" href="../demo/demo.css" media="screen">
+    </head>
+    <body>
+
+        <div class="demo-sidebar">
+            <header class="demo-header">
+                <h1>Animations</h1>
+                <p>There are 7 available animations. 3 of them are built in: <em>shake, spin (CW and CCW)</em> and <em>wiggle</em>. The other 4 (<em>fade, hinge, slide</em> and <em>zoom</em>) can be created by using the Sass mixins.</p>
+                <p>The buttons below allow you to apply an animation to the red element on the right.</p>
+            </header>
+
+            <hr>
+
+            <div class="demo-options">
+                <p><strong>Built-in animations</strong></p>
+                <ul class="options">
+                    <li><a href="#" class="demo-btn">shake</a></li>
+                    <li><a href="#" class="demo-btn">spin-cw</a></li>
+                    <li><a href="#" class="demo-btn">spin-ccw</a></li>
+                    <li><a href="#" class="demo-btn">wiggle</a></li>
+                </ul>
+
+                <p><strong>Animations built using available keyframe functions</strong></p>
+                <ul class="options">
+                    <li><a href="#" class="demo-btn">custom-fade</a></li>
+                    <li><a href="#" class="demo-btn">custom-hinge</a></li>
+                    <li><a href="#" class="demo-btn">custom-slide</a></li>
+                    <li><a href="#" class="demo-btn">custom-zoom</a></li>
+                </ul>
+
+                <p><strong>Custom animations</strong></p>
+                <ul class="options">
+                    <li><a href="#" class="demo-btn">custom-spin-ccw</a></li>
+                    <li><a href="#" class="demo-btn">custom-combination</a></li>
+                </ul>
+            </div> <!-- end demo-options -->
+
+            <hr>
+
+            <a href="#" class="demo-btn" id="animation-series">Start animation series</a>
+        </div> <!-- end demo-sidebar -->
+
+        <div class="demo-content">
+            <div class="lesson-content">
+                <div id="the-object" class="obj1">
+                    Hello!
+                </div>
+
+                <div id="the-second-object" class="obj2">
+                    Hello! I am second.
+                </div>
+
+                <div id="the-third-object" class="obj3">
+                    Hello! I am third.
+                </div>
+            </div> <!-- end lesson-content -->
+        </div> <!-- end demo-content -->
+
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/motion-ui/dist/motion-ui.min.js"></script>
+        <script src="../lesson 2.2/js/scripts.js"></script>
+
+    </body>
+</html>

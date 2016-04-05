@@ -1,0 +1,24 @@
+{
+  "name": "motion-ui",
+  "authors": [
+    "Adrian Purdila <adipurdila@gmail.com>"
+  ],
+  "description": "Learn MotionUI from Top to Bottom",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "motion-ui": "^1.2.2",
+    "normalize-css": "^3.0.3",
+    "wow": "wowjs#^1.1.2"
+  }
+}

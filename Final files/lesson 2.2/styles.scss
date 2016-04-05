@@ -1,0 +1,62 @@
+// Import Motion UI
+@import '../bower_components/motion-ui/src/motion-ui';
+
+// Include mixins for exporting the default framework CSS
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Import variables
+@import '../demo/vars';
+
+// Animations built using available keyframe fucntions
+.custom-fade {
+    @include mui-animation( fade );
+}
+
+.custom-hinge {
+    @include mui-animation( hinge( out, top, center ) );
+}
+
+.custom-slide {
+    @include mui-animation( slide( out ) );
+}
+
+.custom-zoom {
+    @include mui-animation( zoom );
+}
+
+.custom-fade,
+.custom-hinge,
+.custom-slide,
+.custom-zoom,
+.custom-spin-ccw,
+.custom-combination {
+    animation-duration: 3000ms;
+}
+
+// Custom animations
+.custom-spin-ccw {
+    @include mui-animation( spin( ccw ) );
+}
+
+.custom-combination {
+    @include mui-animation( slide, fade, spin, zoom );
+}
+
+// Custom keyframes
+@include mui-keyframes( "custom-keyframe", slide );
+
+// Animation series
+@include mui-series() {
+    .obj1 {
+        @include mui-queue( 1s, 2s, fade( out ) );
+    }
+
+    .obj2 {
+        @include mui-queue( .5s, 0, fade );
+    }
+
+    .obj3 {
+        @include mui-queue( 3s, 0, slide );
+    }
+}
